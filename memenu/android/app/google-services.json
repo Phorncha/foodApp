@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644296022226",
+    "project_id": "myloginmenu",
+    "storage_bucket": "myloginmenu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644296022226:android:9b726c91c9b2b75141f50b",
+        "android_client_info": {
+          "package_name": "com.example.calolator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644296022226-ath4a62pejulqkp1kcg2httrrvro83fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpaoeHjrZwCywic_SU9qvVOGw2DYrxPA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644296022226-ath4a62pejulqkp1kcg2httrrvro83fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
