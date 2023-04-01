@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:calolator/config/colors.dart';
 
 class WelcomScreen extends StatelessWidget {
   Widget singalProducts() {
@@ -10,102 +11,105 @@ class WelcomScreen extends StatelessWidget {
         color: Color(0xffd9dad9),
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Column(children: [
-        Expanded(
-          flex: 2,
-          child: Image.network(
-              'https://www.mos-th.com/wp-content/uploads/2022/06/Genmai_Matcha_Latte.png'),
-        ),
-        Expanded(
-            child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 10,
-            vertical: 5,
+      child: Column(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Image.network(
+                'https://www.mos-th.com/wp-content/uploads/2022/06/Genmai_Matcha_Latte.png'),
           ),
-          child: Column(
-            children: [
-              Text(
-                'มัทฉะลาเต้',
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                ' 35 ฿ ',
-                style: TextStyle(fontSize: 17, color: Colors.grey),
-                //' 35 ฿ ',style: TextStyle( color: Colors.grey,),
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.only(left: 5),
-                      height: 30,
-                      width: 50,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              '1 แก้ว',
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.black),
+          Expanded(
+              child: Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 10,
+              vertical: 5,
+            ),
+            child: Column(
+              children: [
+                Text(
+                  'มัทฉะลาเต้',
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  ' 35 ฿ ',
+                  style: TextStyle(fontSize: 17, color: Colors.grey),
+                  //' 35 ฿ ',style: TextStyle( color: Colors.grey,),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.only(left: 5),
+                        height: 30,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                '1 แก้ว',
+                                style: TextStyle(
+                                    fontSize: 12, color: Colors.black),
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            child: Icon(
-                              Icons.arrow_drop_down,
-                              size: 20,
+                            Expanded(
+                              child: Icon(
+                                Icons.arrow_drop_down,
+                                size: 20,
+                                color: Colors.red,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 30,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.remove,
+                              size: 15,
                               color: Colors.red,
                             ),
-                          ),
-                        ],
+                            Text(
+                              '1',
+                              style: TextStyle(
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Icon(
+                              Icons.add,
+                              size: 15,
+                              color: Colors.red,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: 30,
-                      width: 50,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.remove,
-                            size: 15,
-                            color: Colors.red,
-                          ),
-                          Text(
-                            '1',
-                            style: TextStyle(
-                                color: Colors.red, fontWeight: FontWeight.bold),
-                          ),
-                          Icon(
-                            Icons.add,
-                            size: 15,
-                            color: Colors.red,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        )),
-      ]),
+                  ],
+                )
+              ],
+            ),
+          )),
+        ],
+      ),
     );
   }
 
@@ -173,6 +177,7 @@ class WelcomScreen extends StatelessWidget {
               listTile(
                   icon: Icons.notifications_outlined, title: 'Nitification'),
               listTile(icon: Icons.star_outlined, title: 'Rating & Review'),
+              listTile(icon: Icons.logout_outlined, title: 'Logout'),
               Container(
                 height: 350,
                 child: Column(children: [

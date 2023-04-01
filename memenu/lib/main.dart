@@ -1,3 +1,4 @@
+import 'package:calolator/home/home_page.dart';
 import 'package:calolator/screen/home.dart';
 import 'package:calolator/screen/login.dart';
 import 'package:calolator/screen/register.dart';
@@ -19,5 +20,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.yellow,
         ),
         home: HomeScreen());
+    //HomePage());
   }
 }

@@ -1,3 +1,4 @@
+import 'package:calolator/home/home_page.dart';
 import 'package:calolator/screen/home.dart';
 import 'package:calolator/home/welcomScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -97,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                         Navigator.pushReplacement(context,
                                             MaterialPageRoute(
                                                 builder: (context) {
-                                          return WelcomScreen(); // เมื่อเข้าสู๋ระบบจะส่งเข้าไปที่หน้า welcomScreen
+                                          return HomePage(); // เมื่อเข้าสู๋ระบบจะส่งเข้าไปที่หน้า welcomScreen
                                         }));
                                       });
                                     } on FirebaseAuthException catch (e) {
